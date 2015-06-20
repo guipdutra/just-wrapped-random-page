@@ -1,5 +1,6 @@
 (ns just-wrapped-random-page.core
   (require [clj-http.client :as client]
+           [clojure.java.browse :as browse]
            [clojure.xml :as xml])
   (:gen-class))
 
@@ -19,4 +20,4 @@
   (first (rand-nth links)))
 
 (defn -main []
-  (println (get-random-link (extract-links (parse-response-body site-url)))))
+  (browse/browse-url(get-random-link (extract-links (parse-response-body site-url)))))
