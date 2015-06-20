@@ -1,6 +1,6 @@
 # just-wrapped-random-page
 
-A Clojure library designed to ... well, that part is up to you.
+Picks random texts from awesome blog http://justwrapped.me.
 
 ## Usage
 
