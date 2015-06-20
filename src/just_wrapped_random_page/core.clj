@@ -1,6 +1,7 @@
 (ns just-wrapped-random-page.core
   (require [clj-http.client :as client]
-           [clojure.xml :as xml]))
+           [clojure.xml :as xml])
+  (:gen-class))
 
 (def site-url
   "http://justwrapped.me/sitemap.xml")
